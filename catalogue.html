@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalogue</title>
+    <style>
+        * {
+            background-color: #121112;
+            color: aliceblue;
+        }
+
+        b {
+            color: rgb(254, 210, 96);
+        }
+
+        .h1 {
+            color: rgb(255, 149, 0);
+            font-weight: bold;
+            float: right;
+            display: block;
+            margin-right: 40px;
+            margin-top: 30px;
+            border: none;
+        }
+
+        .logo {
+            height: 100px;
+            display: block;
+        }
+
+        #serchbar {
+            border-radius: 5px;
+            width: 250px;
+            height: 25px;
+            border: 1px solid grey;
+        }
+
+        nav {
+            margin-top: 30px;
+            margin-bottom: 30px;
+
+        }
+
+        .left-nav {
+            float: right;
+        }
+
+        .a {
+            text-decoration: none;
+            border: 1.3px solid rgb(189, 108, 3);
+            border-radius: 10px;
+            padding: 5px;
+        }
+
+        .a:hover {
+            transform: scale(1.05);
+            background-color: rgb(219, 130, 13);
+        }
+
+        h1 {
+            border-left: 5px solid red;
+            padding-left: 5px;
+        }
+        img{
+            border-radius: 20px;
+            transition: transform 0.3s ease;
+           
+
+        }
+        img:hover{
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div>
+            <h1 class="h1">Global Movie Database</h1>
+            <img src="photos/logo.png" class="logo">
+        </div>
+        <hr>
+        <nav>
+            <div class="left-nav">
+                <a href="home1.html" class="a">HOME</a>
+                <a href="catalogue.html" class="a">CATALOGUE</a>
+                <a href="aboutcontect.html" class="a">ABOUT & CONTECT</a>
+                <a href="#" class="a">👤 SIGN UP</a>
+            </div>
+            <div class="right-nav">
+                Search<big>🔍</big><input type="search" placeholder="e.g. dhurandhar" id="serchbar"><br><br>
+            </div>
+        </nav>
+    </header>
+    <h1 align="left">Populer Movies</h1>
+    <table cellpadding="5" align="center">
+        <tr>
+            <td><a href="dhurandhar.html"><img src="photos/dhurandhar.jpg" alt="Not found" height="400"></td></a>
+            <td></td>
+            <td><a href=""><img src="photos/kalki.jpg" alt="Not Found" height="400"></td></a>
+            <td></td>
+            <td><a href=""><img src="photos/cocktail.jpg" alt="Not Found" height="400"></td></a>
+            <td></td>
+            <td><a href=""><img src="photos/dhamaal 4.jpg" alt="Not Found" height="400"></td></a>
+            <td></td>
+        </tr>
+        <tr>
+            <th>
+                <h3>DHURANDHAR</h3>
+            </th>
+            <th></th>
+            <th>
+                <h3>KALKI</h3>
+            </th>
+            <th></th>
+            <th>
+                <h3>COCKTAIL 2</h3>
+            </th>
+            <th></th>
+            <th>
+                <h3>DHAMMAL 4</h3>
+            </th>
+        </tr>
+        <tr>
+            <td><b>Genre:</b>Spy Action Thriller | <b>Rating:</b>⭐8.2</td>
+            <td></td>
+            <td><b>Genre:</b>Science Fiction | <b>Rating:</b>⭐7.0</td>
+            <td></td>
+            <td><b>Genre:</b>Romantic Comedy | <b>Rating:</b>⭐7.3</td>
+            <td></td>
+            <td><b>Genre:</b>Comedy Adventure | <b>Rating:</b>⭐8.1</td>
+        </tr>
+        <tr>
+            <td>
+                <p><b>Director:</b>Aditya Dhar</p>
+            </td>
+            <td></td>
+            <td>
+                <p><b>Director:</b>Nag Ashwin</p>
+            </td>
+            <td></td>
+            <td>
+                <p><b>Director:</b>Homi Adajania</p>
+            </td>
+            <td></td>
+            <td>
+                <p><b>Director:</b>Indra Kumar</p>
+            </td>
+        </tr>
+        <tr>
+            <td><b>Duration:</b>214 Minutes</td>
+            <td></td>
+            <td><b>Duration:</b>181 Minutes</td>
+            <td></td>
+            <td><b>Duration:</b>150 Minutes</td>
+            <td></td>
+            <td><b>Duration:</b>143 Minutes</td>
+        </tr>
+        <tr align="left">
+            <th><a href="https://youtu.be/BKOVzHcjEIo?si=HrO6jAWwafNq6x4f" style="text-decoration: none;color: red;"> ▶️
+                    Watch Trailer</a></th>
+            <th></th>
+            <th><a href="https://youtu.be/aninoDcPWo4?si=qDAtiftepOkd8BLC" style="text-decoration: none;color: red;">▶️
+                    Watch Trailer</a></th>
+            <th></th>
+            <th><a href="https://youtu.be/XXxUqLHq1xg?si=blNRpJIVcw8oNyId" style="text-decoration: none;color: red;">▶️
+                    Watch Trailer</a></th>
+            <th></th>
+            <th><a href="https://youtu.be/IG-eByZdz6Y?si=KMefMCFRaZTdYnyP" style="text-decoration: none;color: red;">▶️
+                    Watch Trailer</a></th>
+        </tr>
+    </table>
+    <h1 align="left">Comedy Movies</h1>
+    <table align="center" cellpadding="5">
+        <tr>
+            <td><a href="comedydetails.html"><img src="photos/dhamaal 4.jpg" alt="Not Found" height="400"></td></a>
+            <td></td>
+            <td><a href="comedydetails.html"><img src="photos/pkirhp.jpg" alt="Not Found" height="400"></td></a>
+            <td></td>
+            <td><img src="photos/sos2.avif" alt="Not Found" height="400"></td>
+            <td></td>
+            <td><img src="photos/3 idiots.jpg" alt="Not Found" height="400"></td>
+        </tr>
+        <tr>
+            <th>
+                <h3>DHAMMAL 4</h3>
+            </th>
+            <th></th>
+            <th>
+                <h3>PHIR HERA PHERI</h3>
+            </th>
+            <th></th>
+            <th>
+                <h3>SON OF SARDAR 2</h3>
+            </th>
+            <th></th>
+            <th>
+                <h3>3 IDIOTS</h3>
+            </th>
+        </tr>
+        <tr>
+            <td><big><b>Genre:</b>Comedy | <b>Rating:</b>⭐8.1<br><br>
+                    <b>Director :</b>Indra Kumar<br><br><b>Duration :</b>143 Minutes<br><br><a
+                        href="https://youtu.be/IG-eByZdz6Y?si=wPyWB7fjwRuDZ54k"
+                        style="text-decoration: none;color: red;">▶️ Watch Trailer</a>
+                </big>
+            </td>
+            <td></td>
+            <td><big><b>Genre:</b>Comedy | <b>Rating:</b>⭐7.4<br><br>
+                    <b>Director :</b>Neeraj Vora<br><br><b>Duration :</b>153 Minutes<br><br><a
+                        href="https://youtu.be/Im_lCAsA27Q?si=bJDKUt3gMsHsOJ-j "
+                        style="text-decoration: none;color: red;">▶️ Watch Trailer</a>
+                </big></td>
+            <td></td>
+            <td><big><b>Genre:</b>Comedy | <b>Rating:</b>⭐4.0<br><br>
+                    <b>Director :</b>Vijay Kumar Arora<br><br><b>Duration :</b>145 Minutes<br><br><a
+                        href="https://youtu.be/HSX_KPfbP1o?si=DpSmxz2-29OHIgAF "
+                        style="text-decoration: none;color: red;">▶️ Watch Trailer</a>
+                </big></td>
+            <td></td>
+            <td><big><b>Genre:</b>Comedy | <b>Rating:</b>⭐8.4<br><br>
+                    <b>Director :</b>Rajkumar Hirani<br><br><b>Duration :</b>170 Minutes<br><br><a
+                        href="https://youtu.be/K0eDlFX9GMc?si=TLVfG9p2O7KCxCFI"
+                        style="text-decoration: none;color: red;">▶️ Watch Trailer</a>
+                </big></td>
+
+        </tr>
+    </table>
+    <h1 align="left">Drama Movies</h1>
+    <table align="center" cellpadding="5">
+        <tr>
+            <td><a href=" dramadetails.html"><img src="photos/12thfail.webp" alt="Not Found" height="400"></td></a>
+            <td></td>
+            <td><a href="dramadetails.html "><img src="photos/chhichhore.jpg " alt="Not Found" height="400"></td></a>
+            <td></td>
+            <td><a href="dramadetails.html "><img src="photos/lagaan.jpg " alt="Not Found" height="400"></td></a>
+            <td></td>
+            <td><a href=" dramadetails.html"><img src="photos/msdhoni.jpg " alt="Not Found" height="400"></td></a>
+        </tr>
+        <tr>
+            <th>
+                <h3>12TH FAIL</h3>
+            </th>
+            <th></th>
+            <th>
+                <h3>CHHICHHORE</h3>
+            </th>
+            <th></th>
+            <th>
+                <h3>LAGAAN</h3>
+            </th>
+            <th></th>
+            <th>
+                <h3>M.S.DHONI<BR><small>THE UNTOLD STORY</small></h3>
+            </th>
+        </tr>
+        <tr>
+            <td><big><b>Genre:</b>Drama | <b>Rating:</b>⭐8.7<br><br>
+                    <b>Director :</b>Vidhu Vinod Chopra<br><br><b>Duration :</b>147 Minutes<br><br><a
+                        href="https://youtu.be/KjbtuqENvVE?si=awr5fEDuKsub_f-W "
+                        style="text-decoration: none;color: red;">▶️ Watch Trailer</a>
+                </big>
+            </td>
+            <td></td>
+            <td><big><b>Genre:</b>Drama,Comedy | <b>Rating:</b>⭐8.3<br><br>
+                    <b>Director :</b>Nitesh Tiwari<br><br><b>Duration :</b>143 Minutes<br><br><a
+                        href="https://youtu.be/t56jPOpGFts?si=AyVxaL6dwDa7I6zU "
+                        style="text-decoration: none;color: red;">▶️ Watch Trailer</a>
+                </big></td>
+            <td></td>
+            <td><big><b>Genre:</b> Period Drama | <b>Rating:</b>⭐8.1<br><br>
+                    <b>Director :</b>Ashutosh Gowariker<br><br><b>Duration :</b>224 Minutes<br><br><a
+                        href="https://youtu.be/hTt5FbgziPw?si=sglL5Sw4KkbJXBwZ"
+                        style="text-decoration: none;color: red;">▶️ Watch Trailer</a>
+                </big></td>
+            <td></td>
+            <td><big><b>Genre:</b> Drama,Sports | <b>Rating:</b>⭐8.0<br><br>
+                    <b>Director :</b>Neeraj Pandey<br><br><b>Duration :</b>184 Minutes<br><br><a
+                        href=" https://youtu.be/6L6XqWoS8tw?si=3c4wK0ekUfwC4IrP"
+                        style="text-decoration: none;color: red;">▶️ Watch Trailer</a>
+                </big></td>
+
+        </tr>
+    </table>
+    <h1 align="left">Thriller Movies</h1>
+    <table align="center" cellpadding="5">
+        <tr>
+            <td><a href="thrillerdetails.html"><img src="photos/dhurandhar.jpg" alt="Not Found" height="400"></td></a>
+            <td></td>
+            <td><a href="thrillerdetails.html"><img src="photos/toxic.jpg " alt="Not Found" height="400"></td></a>
+            <td></td>
+            <td><a href="thrillerdetails.html"><img src="photos/the revange.jpg" alt="Not Found" height="400"></td></a>
+            <td></td>
+            <td><a href="thrillerdetails.html"><img src="photos/inspection.jpg " alt="Not Found" height="400"></td></a>
+        </tr>
+        <tr>
+            <th>
+                <h3>DHURANDHAR</h3>
+            </th>
+            <th></th>
+            <th>
+                <h3>TOXIC<br><small>(Upcoming)</small></h3>
+            </th>
+            <th></th>
+            <th>
+                <h3>DHURANDHAR<br><small>THE REVANGE</small></h3>
+            </th>
+            <th></th>
+            <th>
+                <h3>INSPECTION(2010)</h3>
+            </th>
+        </tr>
+        <tr>
+            <td><big><b>Genre:</b>Spy Action Thriller | <b>Rating:</b>⭐8.2<br><br>
+                    <b>Director :</b>Aditya Dhar<br><br><b>Duration :</b>214 Minutes<br><br><a
+                        href="https://youtu.be/BKOVzHcjEIo?si=2iswpRHl0ZDnQ2Uf"
+                        style="text-decoration: none;color: red;">▶️ Watch Trailer</a>
+                </big>
+            </td>
+            <td></td>
+            <td><big><b>Genre:</b>Crime,thriller | <b>Rating:</b>⭐Panding<br><br>
+                    <b>Director :</b>Geethu Mohandas<br><br><b>Duration :</b>195 Minutes<br><br><a
+                        href="https://youtu.be/aF08WVSvCok?si=sIWJ1G8y8igkFCMb"
+                        style="text-decoration: none;color: red;">▶️ Watch Trailer</a>
+                </big></td>
+            <td></td>
+            <td><big><b>Genre:</b>Spy Action Thriller | <b>Rating:</b>⭐8.2<br><br>
+                    <b>Director :</b>Aditya Dhar<br><br><b>Duration :</b>229 Minutes<br><br><a
+                        href="https://youtu.be/NHk7scrb_9I?si=7Nar-Q4P40cye9vC"
+                        style="text-decoration: none;color: red;">▶️ Watch Trailer</a>
+                </big></td>
+            <td></td>
+            <td><big><b>Genre:</b> Thriller,Adventure | <b>Rating:</b>⭐8.8<br><br>
+                    <b>Director :</b>Christopher Nolan<br><br><b>Duration :</b>148 Minutes<br><br><a
+                        href="https://youtu.be/YoHD9XEInc0?si=pyKWaFf76tz0_88E"
+                        style="text-decoration: none;color: red;">▶️ Watch Trailer</a>
+                </big></td>
+
+        </tr>
+    </table>
+</body>
+
+</html>

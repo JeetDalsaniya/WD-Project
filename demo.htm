@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comedy Movie Details</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #121112;
+            color: aliceblue;
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+
+        .back-btn {
+            background-color: darkgreen;
+            color: white;
+            border: none;
+            border-radius: 20px;
+            font-size: medium;
+            font-weight: bold;
+            padding: 10px 20px;
+            cursor: pointer;
+            margin-bottom: 25px;
+            transition: transform 0.2s ease, background-color 0.2s ease;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .back-btn:hover {
+            transform: scale(1.05);
+            background-color: #006400;
+        }
+
+        /* Movie List Container */
+        .movie-list {
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        /* Individual Movie Card */
+        .movie-card {
+            border-bottom: 1px solid #2a2a2a;
+            padding-bottom: 30px;
+        }
+
+        .movie-title {
+            color: orange;
+            margin-bottom: 16px;
+            font-size: 1.8rem;
+        }
+
+        .movie-content {
+            display: flex;
+            gap: 30px;
+            align-items: flex-start;
+        }
+
+        /* Poster Image */
+        .movie-poster img {
+            border-radius: 20px;
+            width: 250px;
+            height: 350px;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+            display: block;
+        }
+
+        .movie-poster img:hover {
+            transform: scale(1.05);
+        }
+
+        /* Text Details */
+        .movie-details {
+            font-size: 1.05rem;
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .movie-details b {
+            color: rgb(254, 210, 96);
+        }
+
+        .trailer-link {
+            color: #ff4757;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 8px;
+            display: inline-block;
+            transition: color 0.2s ease;
+        }
+
+        .trailer-link:hover {
+            color: #ff6b81;
+            text-decoration: underline;
+        }
+
+        /* Responsive Breakpoint for Mobile Screens */
+        @media (max-width: 650px) {
+            .movie-content {
+                flex-direction: column;
+                align-items: center;
+                text-align: left;
+            }
+            
+            .movie-poster img {
+                width: 220px;
+                height: 310px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <a href="comedy.html" class="back-btn">Back</a>
+
+    <div class="movie-list">
+
+        <!-- Movie 1: Dhamaal 4 -->
+        <div class="movie-card">
+            <h2 class="movie-title">DHAMAAL 4</h2>
+            <div class="movie-content">
+                <div class="movie-poster">
+                    <img src="photos/dhamaal 4.jpg" alt="Dhamaal 4 Poster">
+                </div>
+                <div class="movie-details">
+                    <p><b>Genre:</b> Comedy | <b>Rating:</b> ⭐ 8.1</p>
+                    <p><b>Director:</b> Indra Kumar</p>
+                    <p><b>Writer:</b> Paritosh Painter | Vedd Prakash | Bunty Rathore</p>
+                    <p><b>Star Cast:</b> Ajay Devgan | Arshad Warsi | Ravi Kishan | Sanjay Mishra | Riteish Deshmukh | Javed Jaaferi</p>
+                    <p><b>Duration:</b> 143 Minutes</p>
+                    <p><b>Plot Focus:</b> A century-old hidden treasure drives greedy individuals to risk everything, landing them in dangerous situations that test their resolve and relationships.</p>
+                    <div>
+                        <a href="https://youtu.be/IG-eByZdz6Y?si=wPyWB7fjwRuDZ54k" class="trailer-link" target="_blank">▶️ Watch Trailer</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Movie 2: Phir Hera Pheri -->
+        <div class="movie-card">
+            <h2 class="movie-title">PHIR HERA PHERI</h2>
+            <div class="movie-content">
+                <div class="movie-poster">
+                    <img src="photos/pkirhp.jpg" alt="Phir Hera Pheri Poster">
+                </div>
+                <div class="movie-details">
+                    <p><b>Genre:</b> Comedy | <b>Rating:</b> ⭐ 7.4</p>
+                    <p><b>Director:</b> Neeraj Vora</p>
+                    <p><b>Writer:</b> Bharat Veer | Neeraj Vora</p>
+                    <p><b>Star Cast:</b> Akshay Kumar | Suniel Shetty | Paresh Rawal</p>
+                    <p><b>Duration:</b> 153 Minutes</p>
+                    <p><b>Plot Focus:</b> A twist of fate changes the lives of Raju, Shyam and Baburao when they get cheated by a fraudster. They must now find a way to repay a loan taken from a dreaded gangster.</p>
+                    <div>
+                        <a href="https://youtu.be/Im_lCAsA27Q?si=bJDKUt3gMsHsOJ-j" class="trailer-link" target="_blank">▶️ Watch Trailer</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Movie 3: Son of Sardaar 2 -->
+        <div class="movie-card">
+            <h2 class="movie-title">SON OF SARDAR 2</h2>
+            <div class="movie-content">
+                <div class="movie-poster">
+                    <img src="photos/sos2.avif" alt="Son of Sardaar 2 Poster">
+                </div>
+                <div class="movie-details">
+                    <p><b>Genre:</b> Comedy | <b>Rating:</b> ⭐ 4.0</p>
+                    <p><b>Director:</b> Vijay Kumar Arora</p>
+                    <p><b>Writer:</b> Mohit Jain | Misbah Sehab | Jagdeep Sidhu</p>
+                    <p><b>Star Cast:</b> Ajay Devgan | Mrunal Thakur | Ravi Kishan</p>
+                    <p><b>Duration:</b> 145 Minutes</p>
+                    <p><b>Plot Focus:</b> After his wife asks for a divorce, Jassi joins a dance troupe and helps a musician's daughter get married by posing as her war-hero father.</p>
+                    <div>
+                        <a href="https://youtu.be/HSX_KPfbP1o?si=DpSmxz2-29OHIgAF" class="trailer-link" target="_blank">▶️ Watch Trailer</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Movie 4: 3 Idiots -->
+        <div class="movie-card">
+            <h2 class="movie-title">3 IDIOTS</h2>
+            <div class="movie-content">
+                <div class="movie-poster">
+                    <img src="photos/3 idiots.jpg" alt="3 Idiots Poster">
+                </div>
+                <div class="movie-details">
+                    <p><b>Genre:</b> Comedy | <b>Rating:</b> ⭐ 8.4</p>
+                    <p><b>Director:</b> Rajkumar Hirani</p>
+                    <p><b>Writer:</b> Abhijat Joshi | Rajkumar Hirani | Vidhu Vinod Chopra</p>
+                    <p><b>Star Cast:</b> Aamir Khan | Madhavan | Sharman Joshi | Boman Irani | Kareena Kapoor</p>
+                    <p><b>Duration:</b> 170 Minutes</p>
+                    <p><b>Plot Focus:</b> Two friends search for a brilliant, free-spirited classmate whose unconventional approach to engineering school changed their lives and challenged a rigid education system.</p>
+                    <div>
+                        <a href="https://youtu.be/K0eDlFX9GMc?si=PMC3ulth4ggrcYbH" class="trailer-link" target="_blank">▶️ Watch Trailer</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>

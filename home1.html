@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            color: white;
+            background-color: rgb(11, 11, 11)
+        }
+        h1{
+            color:rgb(255, 149, 0);
+            font-weight: bold;
+            float: right; 
+            display: block;  
+            margin-right: 40px; 
+            margin-top: 30px;
+        }
+        .logo{
+            height: 100px;
+            display: block;
+        }
+        #dd{
+            color: #D97706;
+            border-bottom:1px solid rgb(59, 59, 59) ;
+            border-top: 1px solid rgb(59, 59, 59) ;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            
+        }
+        #serchbar{
+            border-radius: 5px;
+            width: 250px;
+            height: 25px; 
+            border: 1px solid grey;         
+        }
+        nav{
+            margin-top: 30px;
+            margin-bottom: 30px;
+
+        }
+         .left-nav{
+            float: right;    
+         }
+        .a{
+            text-decoration: none;
+            border: 1.3px solid rgb(189, 108, 3);
+            border-radius: 10px;
+            padding: 5px;
+        }
+        .a:hover{    
+            transform: scale(1.05);
+            background-color: rgb(219, 130, 13);
+        }
+        .st{
+            float: left;
+            margin: 10px;
+            padding: 1px;
+            
+        }
+        img{
+           border-radius: 20px;
+           width: 250px;
+           height: 350px;
+           object-fit: cover;
+           transition: transform 0.3s ease;
+           
+
+        }
+        .img:hover{
+            transform: scale(1.05);
+        }
+        .details{
+            text-decoration: solid;
+            font-size: medium;
+            padding: 2px;
+             display: block;
+        }
+        h3{
+            font-size: larger;
+            text-align: center;
+        }
+        span{
+             color: rgb(254, 210, 96);
+             font-weight: bold;
+        }
+        button{
+            border: none;
+            border-radius: 20px;
+            font-size: medium;
+            font-weight: bold;
+            padding: 8px;
+            margin: 2px;
+            transition: transform 0.2s ease;
+            justify-content: space-between;
+    
+        }
+        button:hover{
+            transform: scale(1.05);
+        }
+        footer{
+            margin-top: 600px;
+        }
+         
+        
+       
+    </style>
+</head>
+<body>
+     <header>
+        <div>
+        <h1>Global Movie Database</h1>
+        <img src="photos/logo.png" class="logo"> 
+        </div>
+        <hr>
+        <nav>
+        <div class="left-nav">
+            <a href="home1.html" class="a">HOME</a>
+            <a href="catalogue.html"  class="a">CATALOGUE</a>
+            <a href="aboutcontect.html"  class="a">ABOUT & CONTECT</a>
+            <a href="#"  class="a">👤 SIGN UP</a>
+        </div>
+        <div class="right-nav">
+            Search<big>🔍</big><input type="search" placeholder="e.g. dhurandhar" id="serchbar"><br><br>
+        </div>
+        </nav>
+           <div class="button">
+                <a href="drama1.html"><button type="button" style=" background-color: #1D4ED8;">Drama</button></a>
+                <a href="comedy.html"><button type="button" for="comedy" style="background-color: #D97706;">comedy</button></a>
+                <a href="thriller.html"><button type="button" style="background-color:#EA580C;">Thriller</button></a>
+                <a href="historical.html"><button type="button" style="background-color: #7C3AED;">Historical</button></a>
+                <a href=""><button type="button" style="background-color:#DB2777;">Romance</button></a>
+                <a href=""><button type="button" style="background-color:#374151;">Horror</button></a>
+                <a href=""><button type="button" style=" background-color: #0D9488;">Science Fiction</button></a>
+                <a href=""><button type="button" style="background-color:#DC2626;">Crime</button></a>
+             </div>
+           <h2 id="dd" align="Center">Discover Your Next Cinematic Obsession. Dive into an endless universe of films, reviews, and hidden gems.</h2> 
+     </header>
+     <main>
+     <h2 style="border-left: 5px solid red; padding-left: 3px;"> POPULER MOVIES</h2>
+        <div class="st">
+            <div class="img"><a href="dhurandhar.html"><img src="photos/dhurandhar.jpg" height="400PX"></div></a>
+            <div><h3>DHURANDHAR</h3></div>
+            <div class="details"><span>Genre:</span>Spy Action Thriller | <span>Rating:</span>⭐8.2</div>
+            <div class="details"><span>Director:</span>Aditya Dhar</div>
+            <div class="details"><span>Duration:</span>214 Minutes</div>
+             <div class="view"><a href="dhurandhar.html" style="color: #DC2626; text-decoration: none; font-size: medium;">View More ➡️</a></div>
+        </div>
+        <div class="st">
+            <div class="img"><a href="kalki.html"><img src="photos/kalki.jpg" height="400PX"></div></a>
+            <div><h3>KALKI</h3></div>
+            <div class="details"><span>Genre:</span>Science Fiction | <span>Rating:</span>⭐7.0</div>
+            <div class="details"><span>Director:</span>Nag Ashwin</div>
+            <div class="details"><span>Duration:</span>181 Minutes</div>
+            <div class="view"><a href="kalki.html" style="color: #DC2626; text-decoration: none; font-size: medium;">View More ➡️</a></div>
+        </div>
+        <div class="st">
+            <div class="img"><a href="cocktail2.html"><img src="photos/cocktail.jpg" height="400PX"></div></a>
+            <div><h3>COCKTAIL 2</h3></div>
+            <div class="details"><span>Genre:</span>Romantic,Comedy | <span>Rating:</span>⭐7.3</div>
+            <div class="details"><span>Director:</span>Homi Adajania</div>
+            <div class="details"><span>Duration:</span>150 Minutes</div>
+            <div class="view"><a href="cocktail2.html" style="color: #DC2626; text-decoration: none; font-size: medium;">View More ➡️</a></div>
+        </div>
+        <div class="st">
+            <div class="img"><a href="dhamaal4.html"><img src="photos/dhamaal 4.jpg" height="400PX"></div></a>
+            <div><h3>DHAMAAL 4</h3></div>
+            <div class="details"><span>Genre:</span>Comedy Adventure | <span>Rating:</span>⭐8.1</div>
+            <div class="details"><span>Director:</span>Indra Kumar</div>
+            <div class="details"><span>Duration:</span>143 Minutes</div>
+            <div class="view"><a href="dhamaal4.html" style="color: #DC2626; text-decoration: none; font-size: medium;">View More ➡️</a></div>
+        </div>
+        <div class="st">
+            <div class="img"><a href="toxic.html"><img src="photos/toxic.jpg" height="400PX"></div></a>            
+            <div><h3>TOXIC</h3></div>
+            <div class="details"><span>Genre:</span>Crime,Thriller |<span>Rating:</span>⭐4.0</div>
+            <div class="details"><span>Director:</span>Nag Ashwin</div>
+            <div class="details"><span>Duration:</span>195 Minutes</div>
+            <div class="view"><a href="toxic.html"  style="color: #DC2626; text-decoration: none; font-size: medium;">View More ➡️</a></div>
+        </div>
+    </main>
+    <footer>
+        <br>
+        <br>
+        <div>© 2026 Movie Explorer Portel ~ B.Tech 1st Year Web Designing<br>
+        ~jeet dalsaniya </div>
+    </footer>    
+</body>
+</html>
