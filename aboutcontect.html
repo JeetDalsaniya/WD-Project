@@ -18,6 +18,11 @@
             margin-top: 30px;
             border: none;
         }
+        header {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
 
         .logo {
             height: 100px;
@@ -26,6 +31,7 @@
         nav {
             margin-top: 30px;
             margin-bottom: 30px;
+
 
         }
          #serchbar {
@@ -57,7 +63,8 @@
     </style>
 </head>
 <body>
-      <div>
+    <header>
+        <div>
             <h1 class="h1">Global Movie Database</h1>
             <img src="photos/logo.png" class="logo">
         </div>
@@ -73,6 +80,7 @@
                 Search<big>🔍</big><input type="search" placeholder="e.g. dhurandhar" id="serchbar"><br><br>
             </div>
         </nav>
+    </header>
         <fieldset>
         <legend align="center">   
         <div>
