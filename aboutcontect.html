@@ -18,76 +18,113 @@
             margin-top: 30px;
             border: none;
         }
-        header {
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-        }
-
-        .logo {
-            height: 100px;
-            display: block;
-        }
-        nav {
-            margin-top: 30px;
-            margin-bottom: 30px;
-
-
-        }
-         #serchbar {
-            border-radius: 5px;
-            width: 250px;
-            height: 25px;
-            border: 1px solid grey;
-         }  
-        .left-nav {
-            float: right;
-        }
-
-        .a {
+           a {
             text-decoration: none;
-            border: 1.3px solid rgb(189, 108, 3);
-            border-radius: 10px;
-            padding: 5px; 
+            margin: 3px;
+            justify-content: center;
+            float: left;
+            display: flex;
+            font-size: medium;
+            padding: 5px;
+            margin-top: 17px;
+        }
+        a:hover {
+            color:white;
         }
 
-        .a:hover {
-            transform: scale(1.05);
-            background-color: rgb(219, 130, 13);
+        nav {
+            border-bottom: 1px solid gray;
+            overflow: hidden;
+            padding-bottom: 1px;
+        }
+        .sticky{
+            position: sticky;
+            gap: 0;
+            z-index: 1000;
+        
+        }
+        
+        .search {
+            font-size: large;
+            float: right;
+            display: flex;
+            margin-right: 40px;
+            margin-top: 20px;
         }
 
+        input {
+            border: 1px solid grey;
+            border-radius: 5px;
+            margin-left: 8px;
+        }
         h1 {
           color: red;
         
         }
+        .about p{
+            font-size: large;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            margin-top: 10px;
+        }
+        span{
+            color: orange;
+            font-weight: bold;
+        }
+        .head p{
+            color: white;
+            font-weight: bold;
+            font-size: xx-large;
+            border-left:5px solid orange;
+            padding-left: 5px;
+        }
+        .label{
+            font-size: x-large;
+            gap: 5px;
+            margin-top: 30px;
+        }
+         
+
     </style>
 </head>
 <body>
     <header>
-        <div>
-            <h1 class="h1">Global Movie Database</h1>
-            <img src="photos/logo.png" class="logo">
+         <div class="sticky">
+            <nav>
+                <div class="nav"><img src="photos/logo.png" style=" float: left; height: 70px; display: flex;">
+                    <a href="home1.html">HOME</a>
+                    <a href="catalogue.html">CATALOGUE</a>
+                    <a href="aboutcontect.html">ABOUT & CONTECT</a>
+                    <a href="#"> SIGN UP</a>
+                </div>
+                <div class="search">Search <input type="search" placeholder="e.g, Dhurandhar"></div>
+            </nav>
         </div>
-        <hr>
-        <nav>
-            <div class="left-nav">
-                <a href="home1.html" class="a">HOME</a>
-                <a href="catalogue.html" class="a">CATALOGUE</a>
-                <a href="aboutcontect.html" class="a">ABOUT & CONTECT</a>
-                <a href="#" class="a">👤 SIGN UP</a>
-            </div>
-            <div class="right-nav">
-                Search<big>🔍</big><input type="search" placeholder="e.g. dhurandhar" id="serchbar"><br><br>
-            </div>
-        </nav>
     </header>
         <fieldset>
         <legend align="center">   
         <div>
             <h1 ><span style="color: aliceblue;">About</span> Global Movie Database</h1>
-            
+        </div>
+         
+        <div class="about">
+            <p>
+               <span>Global Movie Database </span> is an educational static web development project crafted specifically for the
+               <span>B.Tech 1st Year Web Designing & Web Technologies Lab</span> curriculum.
+            </p>
+            <p>The core goal of this assignment is to teach students how to take a structured<span> HTML</span> document containing
+              real-world movie metadata and apply progressive styling layers using<span> standard CSS, advanced CSS3
+              properties,</span> and modern CSS frameworks like<span> Bootstrap 5 or Tailwind CSS.</span>
+            </p>
         </div>
         </legend>
-        </fieldset>   
+        </fieldset>  
+        <div>
+            <div class="head"><p>User Feedback</p></div>
+            <div class="label"><label for="name">Name :</label></div>
+            <div class="input"><input type="text" ib="name" placeholder="Enter Your Name" style="width: 30%; height: 25px; border-radius: 10px; border: 1px solid grey;"></div>
+            <div class="label"><label for="email">Email :</label></div>
+            <div class="input"><input type="text" id="email" placeholder="Enter Your Email" style="width: 30%; height: 25px; border-radius: 10px; border: 1px solid grey;"></div>
+        </div>
+
 </body>
 </html>

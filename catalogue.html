@@ -14,11 +14,47 @@
         b {
             color: rgb(254, 210, 96);
         }
-        header {
-            position: sticky;
-            top: 0;
-            z-index: 1000;
+
+         a {
+            text-decoration: none;
+            margin: 3px;
+            justify-content: center;
+            float: left;
+            display: flex;
+            font-size: medium;
+            padding: 5px;
+            margin-top: 17px;
         }
+        a:hover {
+            color:white;
+        }
+
+        nav {
+            border-bottom: 1px solid gray;
+            overflow: hidden;
+            padding-bottom: 1px;
+        }
+        .sticky{
+            position: sticky;
+            gap: 0;
+            z-index: 1000;
+        
+        }
+        
+        .search {
+            font-size: large;
+            float: right;
+            display: flex;
+            margin-right: 40px;
+            margin-top: 20px;
+        }
+
+        input {
+            border: 1px solid grey;
+            border-radius: 5px;
+            margin-left: 8px;
+        }
+         
 
         .h1 {
             color: rgb(255, 149, 0);
@@ -28,41 +64,6 @@
             margin-right: 40px;
             margin-top: 30px;
             border: none;
-        }
-
-        .logo {
-            height: 100px;
-            display: block;
-        }
-
-        #serchbar {
-            border-radius: 5px;
-            width: 250px;
-            height: 25px;
-            border: 1px solid grey;
-        }
-
-        nav {
-            margin-top: 30px;
-            margin-bottom: 30px;
-            position: sticky;
-            
-        }
-
-        .left-nav {
-            float: right;
-        }
-
-        .a {
-            text-decoration: none;
-            border: 1.3px solid rgb(189, 108, 3);
-            border-radius: 10px;
-            padding: 5px;
-        }
-
-        .a:hover {
-            transform: scale(1.05);
-            background-color: rgb(219, 130, 13);
         }
 
         h1 {
@@ -83,22 +84,17 @@
 
 <body>
     <header>
-        <div>
-            <h1 class="h1">Global Movie Database</h1>
-            <img src="photos/logo.png" class="logo">
+          <div class="sticky">
+            <nav>
+                <div class="nav"><img src="photos/logo.png" style=" float: left; height: 70px; display: flex;">
+                    <a href="home1.html">HOME</a>
+                    <a href="catalogue.html">CATALOGUE</a>
+                    <a href="aboutcontect.html">ABOUT & CONTECT</a>
+                    <a href="#"> SIGN UP</a>
+                </div>
+                <div class="search">Search <input type="search" placeholder="e.g, Dhurandhar"></div>
+            </nav>
         </div>
-        <hr>
-        <nav>
-            <div class="left-nav">
-                <a href="home1.html" class="a">HOME</a>
-                <a href="catalogue.html" class="a">CATALOGUE</a>
-                <a href="aboutcontect.html" class="a">ABOUT & CONTECT</a>
-                <a href="#" class="a">👤 SIGN UP</a>
-            </div>
-            <div class="right-nav">
-                Search<big>🔍</big><input type="search" placeholder="e.g. dhurandhar" id="serchbar"><br><br>
-            </div>
-        </nav>
     </header>
     <h1 align="left">Populer Movies</h1>
     <table cellpadding="5" align="center">
